@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .responsive {
+            max-width: 100%;
+            height: auto;
+        }
+        .hidden {
+            display: none;
+        }
+        @media (max-width: 600px) {
+            nav a {
+                flex: 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Online Course Website</h1>
+    </header>
+    <nav>
+        <a href="#home" onclick="showPage('home')">Home</a>
+        <a href="#about" onclick="showPage('about')">About Us</a>
+        <a href="#courses" onclick="showPage('courses')">Courses</a>
+        <a href="#register" onclick="showPage('register')">Register</a>
+        <a href="#contact" onclick="showPage('contact')">Contact</a>
+    </nav>
+    <div class="container">
+        <div id="home">
+            <h2>Home</h2>
+            <p>Welcome to our online course website. Here you can find a variety of courses to enhance your skills.</p>
+            <img src="https://cache.careers360.mobi/media/article_images/2021/8/9/Online-courses-after-10th.webp" alt="Home Image" class="responsive" size="860x430">
+        </div>
+        <div id="about" class="hidden">
+            <h2>About Us</h2>
+            <p>We are dedicated to providing the best online learning experience. Our courses are designed by industry experts.</p>
+        </div>
+        <div id="courses" class="hidden">
+            <h2>Courses</h2>
+            <p>We offer courses in various domains such as Programming, Data Science, Design, and more.</p>
+        </div>
+        <div id="register" class="hidden">
+            <h2>Register</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="course">Course:</label>
+                <select id="course" name="course">
+                    <option value="programming">Programming</option>
+                    <option value="data-science">Data Science</option>
+                    <option value="design">Design</option>
+                </select><br><br>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+        <div id="contact" class="hidden">
+            <h2>Contact</h2>
+            <p>For any queries, please contact us at info@onlinecoursewebsite.com or call us at 123-456-7890.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Online Course Website</p>
+    </footer>
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.container > div');
+            pages.forEach(page => {
+                if (page.id === pageId) {
+                    page.classList.remove('hidden');
+                } else {
+                    page.classList.add('hidden');
+                } 
+            });
+        }
+    </script>
+</body>
+</html>
