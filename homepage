@@ -1,0 +1,49 @@
+
+<html>
+<head>
+<title>My Website</title>
+</head>
+<style>
+    body {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbupWzxHSkTEUthof05ZSYYyeue1y4kW6cqV_fkMAbnQ&s');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    </style>
+<body>
+    <img align="right" src="https://img.freepik.com/free-photo/abstract-glowing-flame-drops-electric-illumination-generative-ai_188544-8092.jpg" alt="">
+<H2 align=center><big><big><Font Face="stylus">HomePage</big></big></H2>
+<H3><UL><li><H2> About me</H2></UL></li></H3>
+<Font Face="Segoe UI" size=4>
+<P><ul>A passionate engineering student on a journey to innovate and solve real-world problems through technology.<br>Currently pursuing my B.tech Computer Science at GLA University. And I belongs to Banda(UP) and <br>my hobby graphic designing.</ul></P>
+<H3><ul><li>Projects</li></ul></H3>
+<ol><LI><b>Birthday invitation card:</b>
+    <p1>As a project, I organized a birthday party
+        card creation event. I designed colorful and
+        <br>cheerful birthday cards, each personalized
+        with heartfelt messages and artistic touches.
+        It was a collaborative effort,<br> involving
+        brainstorming sessions, creative design
+        work, and crafting.</p1>
+    <LI><b>Journaling:</b>
+        <p1>This project involved daily recording of
+            thoughts, emotions, and experiences in a
+            private journal.<br> Through this practice, I
+            aimed to cultivate mindfulness, organize
+            thoughts, and track personal growth over
+            time.</p1>
+    </ol>
+<H3><ul><li>Interest</li></ul></H3>
+<ol><p1><LI>Graphic design</p1>
+    <p1><LI>Web Development</p1>
+        <p1><LI>Artificial intelligence</p1>
+            <p1><LI>Machine learning</p1></ol>
+<H3><ul><li>Contact me</ul></H3>
+<ol><p1><LI><a href = "https://www.instagram.com/">Instagram</a></p1>
+<p1><li><a href = "https://www.linkedin.com/in/avika-gupta-889655280/">LinkedIn</a></p1></ol>
+
+   
+
+
+</body>
+</html>
